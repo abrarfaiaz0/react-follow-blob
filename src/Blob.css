@@ -1,7 +1,39 @@
 .blob {
   height: 300px;
   aspect-ratio: 1;
-  background-color: aqua;
+  background: rgb(255, 107, 249);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 107, 249, 1) 0%,
+    rgba(211, 161, 255, 1) 50%,
+    rgba(255, 239, 0, 1) 100%
+  );
   position: absolute;
   z-index: 2;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  animation: rotate 10s infinite;
+}
+.hidden {
+  display: none;
+}
+.blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  backdrop-filter: blur(150px);
+}
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  50% {
+    scale: 0.9 1.4;
+  }
+  to {
+    rotate: 360deg;
+  }
 }
