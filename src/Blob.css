@@ -1,0 +1,7 @@
+.blob {
+  height: 300px;
+  aspect-ratio: 1;
+  background-color: aqua;
+  position: absolute;
+  z-index: 2;
+}
